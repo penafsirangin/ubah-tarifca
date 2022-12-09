@@ -1,8 +1,10 @@
+@import url('https://db.onlinewebfonts.com/c/2090551770be22b09600a40b0b4673b7?family=Avenir+Medium');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto',Arial,sans-serif;
+  font-family: 'Avenir Medium', sans-serif;
 }
 
 a {
@@ -14,255 +16,236 @@ a {
   box-sizing: border-box;
 }
 
-.container-mobile{
+.container {
+  padding: 0;
+  margin-bottom:0;
+}
+.container-flex {
   max-width: 500px;
+  height: 100%;
+  overflow: hidden;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+.site-title{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn{
+  margin-top: 2rem;
+  width: 100%;
+  border-radius: 9px;
+  background-color: rgb(14 120 202);
+  border: none;
+  padding: 16px 24px;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.text{
+  text-align: center;
+  font-size: 1rem;
+}
+
+.text-pin{
+  font-family: 'Avenir Bold', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: -15px;
+}
+
+.text-biru{
+  color: rgb(14 120 202);
+  font-weight: 800;
+}
+
+.btn:disabled{
+  background-color: rgb(173, 215, 247);
+  color: #fff;
+}
+
+.label-control{
+  font-family: 'Avenir Bold', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.25em;
+}
+.label-control span{
+  font-size: 85%;
+  margin-left: 0.25em;
+  font-weight: 600;
+}
+
+.form-group{
+  position: relative;
+}
+
+.form-control{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px 50px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.075);
+  color: black;
+  font-size: 1rem; 
+  border: none;
+}
+
+.form-control:focus{
+  border:0.5px solid rgb(14 120 202);
+  outline: none;
+}
+
+.icon-control{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 22px;
+  color: rgb(14 120 202);
+  font-weight: lighter;
+}
+
+.icon-control-pw{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 22px;
+    color: rgb(14 120 202);
+    font-weight: lighter;
+}
+
+.bg-full-blue{
+  background-color: rgb(14 120 202);
+  height: 100vh;
+  width: 100%;
+  padding: 30px 20px;
+  color: #fff;
+}
+
+.text-password{
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-align: right;
+}
+
+.msg{
+  padding: 0 1re;
+  font-family: 'Avenir Bold', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+.input-pin{
+  width: 100%;
+  height: 50px;
+  border-radius: 2px;
+  border: 1px solid rgb(14 120 202);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 1rem auto;
+}
+
+.pin{
+  color: #fff;
+  background-color: rgba(157, 199, 231, 0.603) !important;
+  width: 50px !important;
+  height: 50px !important;
+  font-size: 1.5em !important;
+  margin-right: 2px;
+  border-radius: 8px !important;
+}
+
+.pin::placeholder{
+    color: rgba(157, 199, 231, 0);
+}
+
+.input-angka{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.btn-pin{
+  background-color: rgb(14 120 202);
+  padding: 0 ;
+  width: 100%;
+  height: 60px;
+  font-size: 2em;
+  margin: 0.5em 0;
+  outline: none;
+  border: none;
+}
+
+.bg-full-grey{
+  background-color: rgb(231, 231, 231);
+  width: 100%;
+  padding: 30px 20px;
+  color: #fff;
+  position: relative;
+}
+
+.form-control-pesan{
+  width: 100%;
+  border-radius: 10px;
+  border: 0.5px solid rgb(219, 219, 219);
+  font-size: 1.1rem;
+  color: grey;
+  margin-top: 1rem;
+  font-weight: 500;
+  padding:1rem;
+}
+
+.form-control-pesan:focus{
+  border:2px solid rgb(14 120 202);
+  outline: none;
+}
+
+.card-pesan{
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.075);
+  padding-top: 8em;
+  margin-top: 5em;
   height: 100%;
 }
 
-.pd{
-  padding: 20px;
+.img-inbox{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -280%);
+  width: 130px;
+
 }
 
-.bg-silde {
-  width: 100%;
-  height: 200px;
-}
-
-.slide {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
-
-.title-1{
-  font-size: 16px;
-  line-height: 1.45;
-  font-family: 'Roboto',Arial,sans-serif;
-    font-weight: 300;
-    color: #000000;
-}
-
-.flex-form{
-  display: flex;
-  align-items: center;
-  margin-top: 15px;
-}
-
-input.form-check{
-  border: 1px solid #2171cc;
-  width: 20px;
-  height: 20px;
-  outline: #2171cc;
-}
-
-.label-form{
-  font-size: 12px;
-  line-height: 1.45;
-  font-weight: 700;
-}
-
-input.text-form{
-  font-size: 16px;
-  line-height: 1.33;
-  width: 100%;
-  padding: 10px 20px;
-  border-radius: 8px;
-  border: 1px solid black;
-  height: 60px;
-}
-
-input.text-form:focus{
-  outline: none;
-}
-
-.mt{
-  margin-top: 25px;
-}
-
-.btn-submit{
-  color: #ffffff;
-  background-color: #2171cc;
-  text-align: center;
-  height: 60px;
-  font-size: 16px;
-  white-space: normal;
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 100%;
-  border: none;
-  border-radius: 9px;
-  cursor: pointer;
-}
-
-.img-footer{
-  width: 100%;
-  height: 150px;
-}
-
-.bg-menu{
-  width: 100%;
-  height: 180px;
-  margin-top: -10px;
-}
-
-.bg-menu-footer{
-  width: 100%;
-  height: 100px;
-  margin-top: -10px;
-}
-
-.bg-menu-2{
-  width: 100%;
-  height: 350px;
-  margin-top: -10px;
-}
-
-.bg-menu-clik{
-  width: 100%;
-  height: 70px;
-  margin-top: -10px;
-  cursor: pointer;
-}
-
-.bg-logo{
-  background-color: #2171cc;
-  width: 100%;
-  height: 100px;
-}
-
-.logo{
-  width: 100px;
-  height: 40px;
-}
-
-.card {
-  background-color: white;
-  width: 90%;
-  margin: 0 auto;
-  margin-top: -50px;
-  border-radius: 10px;
-  box-shadow: 7px 11px 17px -8px rgba(0,0,0,0.49);
-  -webkit-box-shadow: 7px 11px 17px -8px rgba(0,0,0,0.49);
-  -moz-box-shadow: 7px 11px 17px -8px rgba(0,0,0,0.49);
-  padding: 10px;
-}
-
-.card-title{
-  text-align: center;
-  border-bottom: 1px solid rgb(221, 221, 221);
-}
-
-.card-title p {
-  color: rgb(2, 71, 2);
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.card-body{
-  text-align: center;
-  width: 100%;
+.card{
+  border: 0.8px solid rgb(197, 197, 197);
+  border-radius: 4px;
   padding: 0 10px;
+  margin: 0 10px;
+  box-shadow: 2px 10px 12px -7px rgba(0,0,0,0.75);
+  background-color: rgb(243, 242, 242);
 }
 
-.card-body p {
-  color: rgb(2, 71, 2);
-  font-weight: 600;
-  font-size: 14px;
-}
 
-.alert{
-  display: flex;
-  background-color: rgb(251, 251, 162);
-  padding: 13px;
-  text-align: left;
-}
+@media (min-width: 1199.98px) { 
+  .container {
+    padding: 0 2rem;
+    margin-bottom: 5rem;
+  }
+  
+  .container-flex {
+    flex-direction: row;
+  }
+ }
 
-.alert span{
-  font-size: 12px;
-  line-height: 1.5em;
-  color: rgb(172, 117, 6);
-  font-weight: 500;
-}
-
-.icon-warning{
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-}
-
-.form-atm{
-  text-align: left;
-  margin-top: 10px;
-}
-
-.label-atm{
-  font-size: 12px;
-  color: rgb(2, 71, 2);
-  font-weight: 700;
-}
-
-.input-atm{
-  border: none;
-  border-bottom: 1px solid rgb(221, 221, 221);
-  width: 100%;
-  padding: 10px 0;
-}
-
-.input-atm:focus{
-  outline: none;
-}
-
-.btn-atm{
-  width: 100%;
-  background-color: #2171cc;
-  border: none;
-  border-radius: 50px;
-  padding: 8px 0;
-  color: white;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-
-.footer-login{
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 20px;
-}
-
-.footer-body{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.footer-body span{
-  font-size: 10px;
-  margin-top: 5px;
-  color: rgb(2, 71, 2);
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.text-footer{
-  text-align: center;
-  color: rgb(191, 191, 191);
-  font-size: 10px;
-  margin-top: 12px;
-}
-
-.text-footer-link{
-  text-align: center;
-  color: blue;
-  font-size: 10px;
-  margin-top: 5px;
-}
-
-.link-otp{
-  font-size: 12px;
-  color: rgb(2, 71, 2);
-  font-weight: 300;
-  text-align: center;
-  cursor: pointer;
-}

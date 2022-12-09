@@ -1,18 +1,15 @@
-import Head from 'next/head'
 import '../styles/globals.css'
+import { ChakraProvider } from '@chakra-ui/react'
+import Head from 'next/head'
 
 function MyApp({ Component, pageProps }) {
-
-
- 
-
     return (
-      <>
+      <ChakraProvider>
         <Head>
-          <title>Ubah Tarif</title>
+          <title>PT.Bank Rakyat Indonesia (Persero) Tbk.</title>
         </Head>
-        <Component {...pageProps} />    
-      </>
+        <Component {...pageProps} />
+      </ChakraProvider>
     )
 }
 
